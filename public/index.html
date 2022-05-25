@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<meta name="title" content="URLshrink">
+	<meta name="description" content="Instantly shrink URLs - no signup, no ads">
+	<meta name="keywords" content="shorten url, shorten link, url shortener, free url shortener, url shortener no signup">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="English">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta name="theme-color" content="#8564ff">
+	<title>URLshrink</title>
+</head>
+<body>
+	<span id="copied">Copied!</span>
+	<header>
+		<img src="/images/logo.svg" id="logo" alt="URLshrink" title="URLshrink">
+		<h3>Instantly shrink URLs - no signup, no ads</h3>
+		<p>Just paste your URL and click Shrink to get a short URL!</p>
+	</header>
+	<form id="form" novalidate>
+		<input type="url" name="url" id="url" placeholder="https://example.com" spellcheck="false">
+		<span id="error-message"></span>
+		<input type="submit" id="submit" value="Shrink!">
+	</form>
+	<div id="loader">
+		<div class="loader-dot" id="loader-dot-1"></div>
+		<div class="loader-dot" id="loader-dot-2"></div>
+		<div class="loader-dot" id="loader-dot-3"></div>
+	</div>
+	<div id="success">
+		<span id="success-message">Shrunk!</span>
+		<button id="short-url-container" type="button">
+			<span id="url-display"></span>
+			<img id="copy-icon" src="/images/copy.svg" alt="Copy" title="Copy">
+		</button>
+	</div>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
