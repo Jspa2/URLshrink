@@ -1,4 +1,4 @@
-![URLshrink](public/images/logo.svg)
+![URLshrink](public/images/readme_logo.svg)
 
 URLshrink is a fast URL shortener written in TypeScript, using Express and mongoDB.
 
